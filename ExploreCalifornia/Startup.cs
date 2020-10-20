@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -63,8 +63,8 @@ namespace ExploreCalifornia
             app.UseMvc(routes =>
             {
                 routes.MapRoute("Default",
-                    "{controller=Home}/{action=index}/{id?}"
-                    );
+                    "{controller=Home}/{action=Index}/{id?}"
+                );
             });
 
             app.UseFileServer();
